@@ -2,7 +2,7 @@
 
 public class FriendCircles {
 
-	String[] extraTestfriends = new String[] {
+	static String[] extraTestfriends = new String[] {
 			"YYNNY", 
 			"YYNNN",
 			"NNYNN",
@@ -39,4 +39,10 @@ public class FriendCircles {
     static String switchChar(String friendsAtI, int j) {
         return friendsAtI.substring(0, j) + "V" + friendsAtI.substring(j+1);
     }
+
+	public static void main(String[] args) {
+
+		int ans = friendCircles(extraTestfriends);
+		System.out.println(ans);
+	}
 }
